@@ -1,0 +1,97 @@
+$darkgrey-color: #444;
+$midgrey-color: #888;
+$lightgrey-color: #c9c9c9;
+$moni-color: #5493e7;
+
+.home-container {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  .right-container {
+    width: 60%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(84, 147, 231, 1) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 35pt;
+      font-weight: 800;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    h2,
+    h3 {
+      margin: 5px;
+      max-width: 60%;
+    }
+    img {
+      width: 40%;
+    }
+  }
+  .left-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5vh;
+      .form-title {
+        margin: 0 0 4vh 0;
+        color: $darkgrey-color;
+        text-align: center;
+      }
+      .form-input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-input {
+          color: $darkgrey-color;
+          width: 15vw;
+          height: 4vh;
+          margin: 1vh 2vw;
+          padding: 0.5vh 1vw;
+          border: 1px solid $lightgrey-color;
+          outline: none;
+          font-size: 1.1em;
+          &:active,
+          &:focus {
+            border: 1px solid $midgrey-color;
+          }
+          &.last-input {
+            margin-bottom: 3vh;
+          }
+        }
+        select {
+          width: 17vw !important;
+        }
+      }
+      .form-button {
+        width: 17vw; //15vw + 2vw of content padding
+        background-color: $moni-color;
+        color: white;
+        font-size: 1.3em;
+        padding: 1vh 2vw;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

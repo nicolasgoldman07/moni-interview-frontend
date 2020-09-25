@@ -1,0 +1,44 @@
+$darkgrey-color: #444;
+$midgrey-color: #888;
+$lightgrey-color: #c9c9c9;
+$moni-color: #5493e7;
+
+.loans-list-container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  table {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid $darkgrey-color;
+    font-size: 15px;
+    font-weight: normal;
+    border-collapse: collapse;
+    white-space: nowrap;
+    background-color: white;
+    color: #333;
+    margin: 2vh;
+
+    & td,
+    & th {
+      padding: 8px;
+
+      img {
+        width: 2vw;
+        border-radius: 50%;
+      }
+    }
+
+    & thead th {
+      color: #fff;
+      background: $moni-color;
+    }
+    svg {
+      cursor: pointer;
+    }
+  }
+}

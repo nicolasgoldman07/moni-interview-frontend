@@ -1,0 +1,28 @@
+$darkgrey-color: #333;
+$moni-color: #5493e7;
+.navbar-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $darkgrey-color;
+
+  .navbar-left-logo {
+    max-height: 2em;
+    margin: 1em;
+  }
+  .navbar-left-name {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+  }
+
+  .navbar-right {
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      margin: 0 1em;
+    }
+  }
+}

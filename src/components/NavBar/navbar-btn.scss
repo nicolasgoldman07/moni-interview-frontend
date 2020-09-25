@@ -1,0 +1,42 @@
+$darkgrey-color: #333;
+$moni-color: #5493e7;
+
+.navbar-right-list-anchor {
+  margin: 0.5em;
+  padding: 0.3em 1.4em;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: white;
+  color: $darkgrey-color;
+  &.loan {
+    background-color: $moni-color;
+    color: white;
+  }
+  &.hpme {
+    color: $moni-color;
+    background-color: white;
+  }
+  transition: all 0.3s;
+  &:hover {
+    filter: opacity(0.8);
+  }
+}
+
+.logout {
+  font-size: 16px;
+  margin: 0.5em;
+  padding: 0.3em 1.4em;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: $darkgrey-color;
+  &.signup {
+    background-color: $moni-color;
+    color: white;
+  }
+  transition: all 0.3s;
+  &:hover {
+    filter: opacity(0.8);
+    cursor: pointer;
+  }
+}
